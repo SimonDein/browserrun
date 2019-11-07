@@ -10,7 +10,7 @@ All you have to do is pass the file to the command `browserrun` and a new tab is
 ### Clone the directory (fx. to a directory containing your scripts or git folders)
 `git clone https://github.com/SimonDein/browserrun.git ~/myGitDirectory/browserrun`
 
-### Optional: Symlink the file (fx. where you keep your local commdand scripts)
+### Optional: Symlink the file (fx. where you keep your local command scripts)
 `ln -s ~/myGitDirectory/browserrun/browserrun ~/myScripts`
 
 ### Add executable to path
