@@ -1,0 +1,32 @@
+#!/usr/local/bin/node
+
+// Embeds the passed file into a template html file and opens it in the browser
+const fs = require('fs');
+const childProcess = require('child_process');
+
+let currentDir = process.cwd(); // get path to current directory
+let fileName = process.argv[2];
+let filePath = `${currentDir}/${fileName}`;
+let tmpHTMLFilePath = '/tmp/js_testing_tmp.html';
+
+let html = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <script src='${filePath}'></script>
+</head>
+<body>
+</body>
+</html>
+`
+
+// embed the passed file into the template html
+fs.writeFile(tmpHTMLFilePath, html, function(err) {
+  if (err) throw err;
+  console.log('The test file has been created');
+})
+
+// Open html file with default program (browser)
+childProcess.exec(`open ${tmpHTMLFilePath}`);
