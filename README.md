@@ -3,7 +3,7 @@ A small script making it quick and easy to debug JavaScript files using your def
 
 The script will handle the writing of a template html file for you and only one file will exist at a time. The file is deleted on startup or reboot. It will open the html file in your default program for handling html files - your browser.
 
-All you have to do is pass the file to the command `browserrun` and a new tab is opened in your browser with the code running. Open your developer tools and you're ready to debug.
+All you have to do is pass the file to the command `browserrun` and a new tab is opened in your browser with the code running. Open your developer tools and you're ready.
 
 ## Install
 
