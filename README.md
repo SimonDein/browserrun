@@ -2,17 +2,18 @@
 A small script making it quick and easy to debug JavaScript files using your default browser's developer tools using a single command.
 
 ## Install
-###Clone the directory (fx. to a directory containing your scripts or git folders)
+
+### Clone the directory (fx. to a directory containing your scripts or git folders)
 `git clone https://github.com/SimonDein/browserrun.git ~/myGitDirectory/browserrun`
 
 Optional: Symlink the file to an appropriate destination (fx. where you keep your local commdand scripts)
 `ln -s ~/myGitDirectory/browserrun/browserrun ~/myScripts`
 
-###Add executable to path
+### Add executable to path
 add to `~/.bash_profile`:
 ```
 # Load myScripts
-export PATH="$PATH:$HOME/myScripts"
+export PATH="$PATH:$HOME/myScripts" (Path to dir of script)
 ```
 
 ## Note
